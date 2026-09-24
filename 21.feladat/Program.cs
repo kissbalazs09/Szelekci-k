@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _20.feladat
+namespace _21.feladat
 {
     internal class Program
     {
@@ -12,7 +12,12 @@ namespace _20.feladat
         {
             Console.Write("Kérek egy számot: ");
             int szam = int.Parse(Console.ReadLine());
-            if (szam % 2 == 0)
+
+            if (szam==0)
+            {
+                Console.WriteLine("A szám nulla.");
+            }
+            else if (szam % 2 == 0)
             {
                 Console.WriteLine("A szám páros.");
             }
@@ -20,9 +25,6 @@ namespace _20.feladat
             {
                 Console.WriteLine("A szám páratlan.");
             }
-
-            //Console.WriteLine(szam % 2 == 0 ? "Páros:" : "Páratlan");
-
 
 
             Console.ReadKey();
